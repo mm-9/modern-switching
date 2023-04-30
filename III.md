@@ -14,7 +14,8 @@
 
 回顾已学知识点
 
-- 交换(Switching) 的含义是什么? \\ - 交换机(Switch)在通信网中的作用是什么?
+- 交换(Switching) 的含义是什么? 
+ - 交换机(Switch)在通信网中的作用是什么?
 
 
 
@@ -34,7 +35,7 @@ S:电话交换机
 
 
 
--. 同步数字交换原理(重点)
+一. 同步数字交换原理(重点)
 
 二. TST 交换网络
 
@@ -43,26 +44,18 @@ S:电话交换机
 本讲小结 
 ![](https://cdn.mathpix.com/cropped/2023_04_26_c808929090de211105c2g-06.jpg?height=1628&width=1954&top_left_y=268&top_left_x=264)- 程控交换机是一种电路交换设备, 其核心技术就是同步数字交换技术！
 
-- 同步数字交换:
-
-属于电路交换模式
-
+- 同步数字交换:属于电路交换模式
 它主要基于两种技术来实现数字信号的交换:
 (1) 同步TDM (同步时分多路复用)
 (2) 时隙交换 (语音信号的传输从一个时间片切换到另一个时间片) 
 
-\title{
-1.1 同步时分复用原理
-}
+#### 1.1 同步时分复用原理
+
 ![](https://cdn.mathpix.com/cropped/2023_04_26_c808929090de211105c2g-08.jpg?height=952&width=2106&top_left_y=566&top_left_x=438)
 
 多路复用 Multiplex
 
-
 解复用(分路) \\ Demultiplex
-
-
-
 
 同步时分复用原理
 
@@ -87,12 +80,11 @@ $\begin{array}{lllll}4 & 3 & 2 & 1 & 0\end{array}$
 
 
 
-时隙交换原理 - 动㻁演示
+时隙交换原理 - 动态演示
 
 ![](https://cdn.mathpix.com/cropped/2023_04_26_c808929090de211105c2g-11.jpg?height=709&width=2152&top_left_y=645&top_left_x=356)
 
 时隙 432120
-
 43210
 
 开关总是按时隙顺序接通各触点。
@@ -152,17 +144,13 @@ TS $4 \begin{array}{lllll} & 3 & 2 & 1 & 0\end{array}$
 
 CPU 写入
 
-
-
 思考题
 
 - 时间交换单元会带来交换时延吗? 如果有, 最大时延是多少?
 
 ![](https://cdn.mathpix.com/cropped/2023_04_26_c808929090de211105c2g-14.jpg?height=694&width=1126&top_left_y=973&top_left_x=940)
 
-
-
-$T$ 接线器 (输出控制方式) - 动㻁演示
+$T$ 接线器 (输出控制方式) - 动态演示
 
 ![](https://cdn.mathpix.com/cropped/2023_04_26_c808929090de211105c2g-15.jpg?height=1354&width=2327&top_left_y=561&top_left_x=328)
 
@@ -170,17 +158,16 @@ $T$ 接线器 (输出控制方式) - 动㻁演示
 
 $T$ 接线器 (输入控制方式)
 
-\section{TS $4 \begin{array}{lllll} & 4 & 2 & 1 & 0\end{array}$}
+TS $4 \begin{array}{lllll} & 4 & 2 & 1 & 0\end{array}$
 
 ![](https://cdn.mathpix.com/cropped/2023_04_26_c808929090de211105c2g-16.jpg?height=191&width=671&top_left_y=643&top_left_x=317)
 
 SM:话音存储器
 ![](https://cdn.mathpix.com/cropped/2023_04_26_c808929090de211105c2g-16.jpg?height=482&width=332&top_left_y=641&top_left_x=811)
 
+无码了？
 计洣品楍
-
 日寸钟脉旪
-
 (庤其:1日寸隙) C
 
 ![](https://cdn.mathpix.com/cropped/2023_04_26_c808929090de211105c2g-16.jpg?height=533&width=563&top_left_y=666&top_left_x=1091)
@@ -335,9 +322,8 @@ TST 三级交换原理分析
 
 ![](https://cdn.mathpix.com/cropped/2023_04_26_c808929090de211105c2g-30.jpg?height=570&width=1108&top_left_y=1162&top_left_x=1098)
 
-\title{
 T/S时分交换网络的结构分析
-}
+
 
 1. 将时分交换网络转换成等效的空分交换网络。
 
@@ -392,13 +378,13 @@ T/S交换网络的阻塞率如何计算?
 
 三级空分交换网络
 
-\section{无阻塞的条件： \\ $k \geq n_{1}+n_{2}-1$}
+无阻塞的条件：  $k \geq n_{1}+n_{2}-1$
 
 
 
 思考题
 
-- 怎样将一个TST网络变成无阻塞网络? \\ (要求：说明具体的实现方法)
+- 怎样将一个TST网络变成无阻塞网络?  (要求：说明具体的实现方法)
 
 (提示: 先画出等效空分网络, 再根据CLOS网络无阻塞条件确定各 $T / S$ 接线器的存储器容量及其读写周期)。
 
